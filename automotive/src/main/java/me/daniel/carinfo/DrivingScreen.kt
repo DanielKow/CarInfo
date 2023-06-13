@@ -42,8 +42,6 @@ class DrivingScreen(carContext: CarContext) : Screen(carContext) {
             val traveledKilometers = traveledMeters / 1000
             mileage = "$traveledKilometers km"
 
-            mileage = "12213 km"
-
             invalidate()
         }
         val energyLevelListener = OnCarDataAvailableListener<EnergyLevel> { data ->
